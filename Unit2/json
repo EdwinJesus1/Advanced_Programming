@@ -1,0 +1,20 @@
+const device = {
+        sendorModel: "HC04",
+        count: 0,
+        date: new Date(),
+};
+
+
+console.log(device.data.getFullYear(), typeof device);
+
+const deviceJSON = JSON.stringify(device);
+console.log(deviceJSON, typeof deviceJSON);
+// Crear un JSON desde code//
+
+const myJson = '{"name": "Edwin", "edad": 19, "friend": ["Manuel", "Pedro"], isMannager: false}'
+console.log(myJSON, typeof myJson);
+
+//Manipular JSON format.7
+//convertir un JSON a un objeto de JS;
+const myObject = JSON.parse(myJson);
+console.log(myObj.name);
